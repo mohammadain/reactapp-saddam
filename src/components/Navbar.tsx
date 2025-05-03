@@ -47,17 +47,7 @@ const Navbar: React.FC = () => {
             <NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
               About
             </NavLink>
-            <a href="#contact" className="button-primary">Contact</a>
           </div>
-          
-          {/* Mobile Navigation Toggle */}
-          <button 
-            className="md:hidden text-primary-800"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </nav>
       </div>
       
